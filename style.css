@@ -1,27 +1,46 @@
 /* Basic styles for the image */
 .image-container {
     text-align: center;
-    padding: 0;
-    margin: 0;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevents any extra space */
+    padding: 10px;
 }
 
 .image-container img {
-    width: 100vw;  /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    object-fit: cover; /* Ensures the image covers the entire container */
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: 0;
-    padding: 0; /* Removes any padding */
+    margin: 0 auto;
 }
 
-/* Remove extra space around the image */
-body {
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Adjust font sizes */
+    body {
+      font-size: 14px;
+    }
+
+    /* Ensure the image scales properly on mobile */
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+  
+/* body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+img {
+    width: 100%;
+    height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+} */
