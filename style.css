@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+    /* Adjust font sizes */
+    body {
+      font-size: 14px;
+    }
+    /* Stack elements vertically */
+    .menu-item {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+
+  
+/* body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+} */
