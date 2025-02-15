@@ -1,15 +1,28 @@
+/* Basic styles for the image */
+.image-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
 @media only screen and (max-width: 600px) {
     /* Adjust font sizes */
     body {
       font-size: 14px;
     }
-    /* Stack elements vertically */
-    .menu-item {
-      display: block;
-      width: 100%;
+
+    /* Ensure the image scales properly on mobile */
+    .image-container img {
+        max-width: 100%;
+        height: auto;
     }
-  }
-  
+}
+
 
   
 /* body, html {
