@@ -11,6 +11,16 @@
     margin: 0 auto;
 }
 
+/* Remove extra space below the image */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
     /* Adjust font sizes */
@@ -24,6 +34,7 @@
         height: auto;
     }
 }
+
 
 
 
