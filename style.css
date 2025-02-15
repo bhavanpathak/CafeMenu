@@ -4,19 +4,19 @@
     padding: 0;
     margin: 0;
     height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents any extra space */
 }
 
 .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
     object-fit: cover; /* Ensures the image covers the entire container */
     display: block;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0; /* Removes any padding */
 }
 
-/* Remove extra space below the image */
+/* Remove extra space around the image */
 body {
     margin: 0;
     padding: 0;
@@ -25,25 +25,3 @@ body {
 html, body {
     height: 100%;
 }
-
-
-
-
-
-  
-/* body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-    img {
-        width: 100%;
-    }
-} */
