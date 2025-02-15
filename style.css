@@ -1,12 +1,17 @@
 /* Basic styles for the image */
 .image-container {
     text-align: center;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
 }
 
 .image-container img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
     display: block;
     margin: 0 auto;
 }
@@ -21,19 +26,6 @@ html, body {
     height: 100%;
 }
 
-/* Responsive styles */
-@media only screen and (max-width: 600px) {
-    /* Adjust font sizes */
-    body {
-      font-size: 14px;
-    }
-
-    /* Ensure the image scales properly on mobile */
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-    }
-}
 
 
 
