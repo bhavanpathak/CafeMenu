@@ -1,51 +1,78 @@
-/* Reset & Global Styles */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f2f5ec;
+/* Basic styles for the image */
+.image-container {
+    text-align: center;
+    padding: 10px;
 }
 
-/* Menu Container */
-.menu-container {
-    width: 100%;
+.image-container img {
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Prevents scrolling issues */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Wrapper to Maintain 16:9 Aspect Ratio */
-.menu-wrapper {
-    width: 100%;
-    max-width: 800px;
-    position: relative;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Adjust font sizes */
+    body {
+      font-size: 14px;
+    }
+
+    /* Ensure the image scales properly on mobile */
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
-/* Responsive Image */
-.responsive-menu {
+/* Basic styles for the image container */
+.image-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Adjusts image inside the container */
+    overflow: hidden; /* Prevents any extra space */
+    margin: 0;
+    padding: 0;
 }
 
-/* Mobile Optimization */
-@media (max-width: 600px) {
-    .menu-wrapper {
+/* Ensure the image covers the entire viewport */
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0; /* Removes any padding */
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Remove extra space around the image */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+  
+/* body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
         width: 100%;
-        max-width: 100%;
-        padding-top: 56.25%; /* Maintains 16:9 aspect ratio */
     }
-
-    .responsive-menu {
-        object-fit: contain; /* Ensures full visibility without cropping */
-    }
-}
+} */
